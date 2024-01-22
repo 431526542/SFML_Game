@@ -12,6 +12,18 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Engine\01. Header">
+      <UniqueIdentifier>{21b137ec-48a2-480c-820c-3e9915741cd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\02. Core">
+      <UniqueIdentifier>{bc0f4d84-01e4-45fa-909d-90fee297be4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Manager">
+      <UniqueIdentifier>{d006d524-d900-435f-919c-bedda8606498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Object">
+      <UniqueIdentifier>{adb87766-b6c7-4f9d-a170-7a45903f5bd9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -25,6 +37,15 @@
     </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>Engine\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GCore.h">
+      <Filter>Engine\02. Core</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Engine\01. Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -42,5 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyGame.cpp" />
+    <ClCompile Include="GCore.cpp">
+      <Filter>Engine\02. Core</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
