@@ -154,6 +154,7 @@
     <ClInclude Include="define.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GCore.h" />
+    <ClInclude Include="GKeyMgr.h" />
     <ClInclude Include="MyGame.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
@@ -161,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GCore.cpp" />
+    <ClCompile Include="GKeyMgr.cpp" />
     <ClCompile Include="MyGame.cpp" />
   </ItemGroup>
   <ItemGroup>

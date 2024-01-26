@@ -12,14 +12,22 @@ int main()
     //Memory Leakage Sieve
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-    sf::Window window(sf::VideoMode(800, 600), "My window");
-
+    sf::Window window;
     
+    //Core Initialize
+    if (!(GCore::GetInst()->init(window, sf::Vector2u(1000, 720), "Game")))
+    {
+        MessageBox(nullptr, L"Engine Core Initialize Failed"
+            , L"ERROR", MB_OK);
+
+        return false;
+    }
+
 
     // run the program as long as the window is open
     while (window.isOpen())
     {
-        //GCore::Get
+        GCore::GetInst()->progress(window);
 
         // check all the window's events that were triggered since the last iteration of the loop
         sf::Event event;

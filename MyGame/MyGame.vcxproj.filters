@@ -24,6 +24,15 @@
     <Filter Include="Engine\04. Object">
       <UniqueIdentifier>{adb87766-b6c7-4f9d-a170-7a45903f5bd9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\03. Manager\Camera">
+      <UniqueIdentifier>{dd198f8a-c293-4ef2-96a7-bfd733122dfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Manager\KeyMgr">
+      <UniqueIdentifier>{d6c03b0b-e8b2-413e-9772-e36242e2123b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Manager\LevelMgr">
+      <UniqueIdentifier>{89c0533b-298f-4da0-9a6b-051109801f43}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -47,6 +56,9 @@
     <ClInclude Include="pch.h">
       <Filter>Engine\01. Header</Filter>
     </ClInclude>
+    <ClInclude Include="GKeyMgr.h">
+      <Filter>Engine\03. Manager\KeyMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="MyGame.ico">
@@ -62,9 +74,12 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="GCore.cpp">
       <Filter>Engine\02. Core</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGame.cpp" />
+    <ClCompile Include="GKeyMgr.cpp">
+      <Filter>Engine\03. Manager\KeyMgr</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
